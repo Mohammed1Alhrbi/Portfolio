@@ -360,8 +360,118 @@ nav a:hover {
     0%, 100% { transform: translateY(0) rotateY(-10deg); }
     50% { transform: translateY(-30px) rotateY(10deg); }
 }
+/* --- Responsive Design (Breakpoints) --- */
+
+/* Tablets & Small Laptops */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .hero-image-container {
+        width: 400px;
+    }
+}
+
+/* Tablets (Portrait) */
 @media (max-width: 768px) {
-    .hero-title { font-size: 3.5rem; }
-    .hero { padding-top: 100px; text-align: center; justify-content: center; }
-    .cta-group { justify-content: center; }
+    header {
+        padding: 15px 5%;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .cta-group {
+        justify-content: center;
+    }
+
+    .hero-image-container {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 80%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .hero-image-container img {
+        animation: hero-float-mobile 6s ease-in-out infinite;
+    }
+
+    .section {
+        padding: 80px 5%;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 25px;
+    }
+
+    .skill-card {
+        padding: 30px 20px;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes hero-float-mobile {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
