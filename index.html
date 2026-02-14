@@ -1,98 +1,187 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Al-Harbi | Full-Stack & Cyber Security Engineer</title>
+    <title data-i18n="title">Mohammed Al-Harbi</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for Professional Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<header>
+    <div class="logo"></div>
+    <nav>
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#about" data-i18n="nav_about">About Me</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#tools" data-i18n="nav_tools">Tools</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle" class="lang-btn">EN</button>
+    </nav>
+</header>
 
-    <!-- 3D Background Container -->
-    <canvas id="three-canvas"></canvas>
+<main>
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="محمد" data-i18n="hero_name_1">محمد</span>
+                <br>
+                <span data-i18n="hero_name_2">الحربي</span>
+            </h1>
+            <h2 class="hero-role" data-i18n="hero_title">Full stack developer</h2>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Network Systems Management Graduate</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary" data-i18n="nav_contact">Contact Me</a>
+                <a href="#projects" class="btn btn-secondary" data-i18n="nav_projects">View Projects</a>
+                <a href="CV.pdf" class="btn btn-secondary" target="_blank" data-i18n="btn_cv">Download CV</a>
+            </div>
+        </div>
+    </section>
 
-    <header>
-        <div class="logo">AL-HARBI</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- About Me Section -->
+    <section class="section" id="about">
+        <h2 class="section-title" data-i18n="about_title">About Me</h2>
+        <div class="about-container">
+            <p class="about-text" data-i18n="about_text">
+                I have a background in Network Systems Management and Web Development. I work on building Full Stack
+                applications using modern technologies, with a strong focus on application security and input
+                validation.
+            </p>
+        </div>
+    </section>
 
-    <main>
-        <section class="hero" id="about">
-            <div class="hero-content">
-                <span class="section-label">[ SYSTEM STATUS: SECURE ]</span>
-                <h1 class="hero-title">
-                    <span class="glitch" data-text="MOHAMMED">MOHAMMED</span>
-                    <br>
-                    <span>AL-HARBI</span>
-                </h1>
-                <p class="hero-description">
-                    > Initializing identity: <strong>Full-Stack Security Engineer</strong><br>
-                    > Specialist in defensive architecture and penetration testing.<br>
-                    > Decoding future systems...
-                </p>
-                <div class="cta-group">
-                    <a href="#contact" class="btn btn-primary">INITIALIZE CONTACT</a>
-                    <a href="#skills" class="btn btn-secondary">VIEW MODULES</a>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
+        <div class="skills-grid-categorized">
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3 data-i18n="skill_cat_backend">Backend Development</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>RESTful APIs</li>
+                    <li>Authentication & Authorization</li>
+                    <li>MySQL Database Integration</li>
+                </ul>
+            </div>
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3 data-i18n="skill_cat_frontend">Frontend Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <!-- API Development -->
+            <div class="skill-category">
+                <h3 data-i18n="skill_cat_api">API Development</h3>
+                <ul>
+                    <li>RESTful API Design</li>
+                    <li>JSON</li>
+                    <li>Client–Server Communication</li>
+                </ul>
+            </div>
+            <!-- Web Security -->
+            <div class="skill-category">
+                <h3 data-i18n="skill_cat_security">Web Security (Basics)</h3>
+                <ul>
+                    <li>SQL Injection Prevention</li>
+                    <li>Cross-Site Scripting (XSS) Mitigation</li>
+                    <li>Input Validation & Sanitization</li>
+                    <li>Secure Authentication Practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section" id="tools">
+        <h2 class="section-title" data-i18n="tools_title">Tools</h2>
+        <div class="tools-grid">
+            <div class="tool-item"><i class="fas fa-code"></i> VS Code</div>
+            <div class="tool-item"><i class="fas fa-server"></i> XAMPP / MySQL</div>
+            <div class="tool-item"><i class="fas fa-box"></i> Composer</div>
+            <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
+            <div class="tool-item"><i class="fas fa-paper-plane"></i> Postman</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card work-in-progress">
+                <div class="status-badge">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span data-i18n="proj_status">Work In Progress</span>
+                </div>
+                <br>
+                <div class="project-content">
+                    <h3 data-i18n="proj_1_title">Dashboard</h3>
+                    <p data-i18n="proj_1_desc">Dashboard for managing users, products, and orders.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link disabled"><i class="fab fa-github"></i> <span
+                                data-i18n="view_code">View Code</span></a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="hero-image-container">
-                <img src="hero_image.png" alt="Mohammed Al-Harbi Security Visual">
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <span class="section-label">Core Expertise</span>
-            <h2 class="section-title">Technical Skills</h2>
-
-            <div class="skills-grid">
-                <!-- Cyber Security -->
-                <div class="skill-card cyber-highlight">
-                    <div class="skill-icon"><i>🛡️</i></div>
-                    <h3>Cyber Security</h3>
-                    <p>Advanced penetration testing, system hardening, and secure API architecture design.</p>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <span class="section-label" data-i18n="contact_label">Connectivity</span>
+        <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a
+                        href="https://accounts.google.com/SignOutOptions?hl=ar&continue=https://mail.google.com/mail/&service=mail&ec=GBRAFw">email</a>
                 </div>
-
-                <!-- Python -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i>🐍</i></div>
-                    <h3>Python</h3>
-                    <p>AI integration, automated security scripts, and scalable backend services.</p>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/mohammed-alharbi-3b6223357/" target="_blank">LinkedIn</a>
                 </div>
-
-                <!-- PHP -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i>🐘</i></div>
-                    <h3>PHP</h3>
-                    <p>Architecting enterprise systems with Laravel, focusing on performance and security.</p>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Mohammed1Alhrbi" target="_blank">GitHub</a>
                 </div>
-
-                <!-- JavaScript -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i>⚡</i></div>
-                    <h3>JavaScript</h3>
-                    <p>Interactive 3D experiences and high-end UI/UX using React </p>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/966537649368" target="_blank">WhatsApp</a>
                 </div>
             </div>
-        </section>
-    </main>
+            <form class="contact-form">
+                <input type="text" data-i18n-placeholder="placeholder_name" placeholder="Your Name" required>
+                <input type="email" data-i18n-placeholder="placeholder_email" placeholder="Your Email" required>
+                <textarea data-i18n-placeholder="placeholder_message" placeholder="Your Message" rows="5"
+                    required></textarea>
+                <button type="submit" class="btn btn-primary" data-i18n="btn_send">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+</main>
 
-    <footer style="padding: 100px 8%; border-top: 1px solid var(--glass-border); text-align: center;">
-        <p style="color: var(--text-gray);">&copy; 2026 Mohammed Al-Harbi. All rights reserved.</p>
-    </footer>
+<footer style="padding: 100px 8%; border-top: 1px solid var(--glass-border); text-align: center;">
+    <p style="color: var(--text-gray);">&copy; 2026 Mohammed Al-Harbi. All rights reserved.</p>
+    <div class="footer-links" style="margin-top: 20px;">
+        <a href="https://github.com/" target="_blank" style="color: var(--primary); margin: 0 10px;"><i
+                class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" style="color: var(--primary); margin: 0 10px;"><i
+                class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
 
-    <!-- Three.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
